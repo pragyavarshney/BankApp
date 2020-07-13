@@ -21,7 +21,13 @@ public class PersonalinfoServlet extends HttpServlet {
     	String middleName = request.getParameter("mname");
     	String lastName = request.getParameter("lname");
     	String gender = request.getParameter("gender");
-    
+    	
+    	//Response 
+    	HttpSession ses = request.getSession();
+    	ses.setAttribute("fn", firstName);
+    	ses.setAttribute("mn", middleName);
+    	ses.setAttribute("ln", lastName);
+    	ses.setAttribute("gn", gender);
     	
     	response.sendRedirect("html/contactinfo.html");
     	

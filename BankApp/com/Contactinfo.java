@@ -23,11 +23,11 @@ public class Contactinfo extends HttpServlet {
 		    	
 		    	//Response to welcome2output.jsp
 		    	HttpSession ses = request.getSession();
-		    	ses.setAttribute("fn", address);
-		    	ses.setAttribute("mn", city);
-		    	ses.setAttribute("ln", state);
-		    	ses.setAttribute("ln", country);
-		    	ses.setAttribute("ln", phone);
+		    	ses.setAttribute("add", address);
+		    	ses.setAttribute("city", city);
+		    	ses.setAttribute("state", state);
+		    	ses.setAttribute("country", country);
+		    	ses.setAttribute("phone", phone);
 		    	
 		    
 		    	
